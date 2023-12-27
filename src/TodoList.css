@@ -1,0 +1,63 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; 
+  padding: 20px; 
+}
+
+.todo-input-grid, .todo-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input-grid {
+  margin-bottom: 20px;
+}
+
+.name-input, .due-date-input {
+  font-size: 15px;
+  padding: 6px;
+  border: 1px solid #ccc; /* Adds a border to the input fields */
+  border-radius: 4px; /* Rounds the corners of the input fields */
+}
+
+.add-todo-button {
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Adds a smooth transition effect */
+}
+
+.add-todo-button:hover {
+  background-color: darkgreen; /* Changes button color on hover */
+}
+
+.todo-item {
+  background-color: white; /* Adds a background color to todo items */
+  padding: 10px;
+  border: 1px solid #ddd; /* Adds a border to todo items */
+  border-radius: 4px;
+  grid-column: 1 / -1; /* Makes todo items span all columns */
+}
+
+.delete-todo {
+  background-color: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.delete-todo:hover {
+  background-color: red; /* Changes button color on hover */
+}
