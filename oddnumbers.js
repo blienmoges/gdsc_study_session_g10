@@ -11,9 +11,7 @@ function printOddNumberPattern(n) {
     }
   }
 }
-
-
-const numberToPrintUpTo = 10;
+const numberToPrintUpTo = 11;
 printOddNumberPattern(numberToPrintUpTo);
 
 
